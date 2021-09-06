@@ -4,9 +4,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
 <body class="preload">
     <header class="header">
+        
         <button class="header__button" id="btnNav" type="button">
             <i class="material-icons">menu</i>
-        </button>
+        </button> 
+        <div class="logo-header">
+            <h1 class="logo-header">Renal</h1> 
+        </div>
+
+        <div class="top-header-links " style="float: right; color:#ffffff">
+            <ul style="color: #ffffff;">
+                <li>
+                    <a href="/login" title="Login" style="color: #1fd6d6;;">Login /</a>
+                    <a href="/register" title="Register" style="color: #1fd6d6;;">Register</a>
+                </li> 
+                {{!-- <li style="color: #1fd6d6;">/</li> --}}
+                {{!-- <li> <a href="#" title="Login" style="color: #1fd6d6;;">Register</a></li> --}}
+            </ul>
+
+        </div>
+        {{!-- .top-header-links>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    float: none;
+    margin: 0;
+    padding-left: 10px;
+} --}}
+
+        
     </header>
     <nav class="nav">
         <div class="nav__links">
@@ -16,23 +43,26 @@
             </a>
             <a class="nav__link " href="#">
                 <i class="material-icons">source</i>
-                Projects
+                DOCTOR
             </a>
             <a class="nav__link" href="#">
                 <i class="material-icons">lock</i>
-                Security
+                ADMIN
             </a>
             <a class="nav__link" href="#">
                 <i class="material-icons">history</i>
-                History
+                STAFF
             </a>
             <a class="nav__link" href="#">
                 <i class="material-icons">person</i>
-                Profile
+                PROFIE
             </a>
         </div>
+
         <div class="nav__overlay"></div>
+        
     </nav>
+    
     <main>
         Hi my name is Dom!
     </main>
