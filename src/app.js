@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const cookieSession = require("cookie-session");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 require("./db/conn");
 const User = require("./models/usermsg");
 const authenticateUser = require("../middlewares/authenticateUser");
@@ -53,7 +53,7 @@ app.get("/home", authenticateUser, (req, res) => {
   });
 
 
-// route for handling post requirests
+// route handling post
 app
   .post("/login", async (req, res) => {
     const { email, password } = req.body;
