@@ -5,7 +5,7 @@ const cookieSession = require("cookie-session");
 const bcrypt = require("bcryptjs");
 require("./db/conn");
 const User = require("./models/usermsg");
-const authenticateUser = require("../middlewares/authenticateUser");
+const authenticateUser = require("../authenticateUser");
 const hbs = require("hbs");
 
 const app = express();
