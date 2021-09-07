@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const cookieSession = require("cookie-session");
 const bcrypt = require("bcryptjs");
+const DB = 'mongodb+srv://sakshisongat:<2face3book>@cluster0.rvukv.mongodb.net/thecare?retryWrites=true&w=majority'
 require("./db/conn");
 const User = require("./models/usermsg");
 const authenticateUser = require("../authenticateUser");
